@@ -119,19 +119,6 @@ const createParkingIcon = (status: 'free' | 'occupied') => {
 - [x] Real-time Updates implementieren
 - [x] Fehlerbehandlung verbessern
 
-#### Technische Details:
-```typescript
-const handleSpotClick = async (spot: ParkingSpot) => {
-  const newStatus = spot.status === 'free' ? 'occupied' : 'free'
-  // Supabase Update + Local State Update
-}
-```
-
-#### Deliverables:
-- ✅ Parkplatz-Status-Management
-- ✅ Interaktive Status-Änderung
-- ✅ Neue Parkplätze hinzufügen
-- ✅ Real-time Synchronisation
 
 ---
 
@@ -197,29 +184,17 @@ const getLevelTitle = (level: number) => {
 
 ## 🔧 AP7: Demo-Modus & Fallbacks
 
-### Status: ✅ Abgeschlossen
+### Status: 🔄 In Bearbeitung
 ### Zeitaufwand: 1.5 Stunden
 ### Priorität: Mittel
 
 #### Aufgaben:
-- [x] Demo-Daten für Entwicklung
-- [x] Offline-Funktionalität
-- [x] Fehlerbehandlung verbessern
-- [x] Graceful Degradation
-- [x] Demo-Modus-Indikator
+- [ ] Demo-Daten für Entwicklung
+- [ ] Offline-Funktionalität
+- [ ] Fehlerbehandlung verbessern
+- [ ] Graceful Degradation
+- [ ] Demo-Modus-Indikator
 
-#### Technische Details:
-```typescript
-const demoParkingSpots: ParkingSpot[] = [
-  {
-    id: 'demo-1',
-    lat: 47.3769,
-    lng: 8.5417,
-    status: 'free',
-    // ...
-  }
-]
-```
 
 #### Deliverables:
 - ✅ Demo-Daten verfügbar
@@ -357,12 +332,6 @@ describe('ParkingMap', () => {
 
 ---
 
-## 📞 Kontakt
-
-**Entwickler**: Arvin Ka  
-**GitHub**: [arvinka23](https://github.com/arvinka23)  
-**Projekt**: Parkly - Kostenlose Parkplatz-Finder App
-
----
 
 *Letzte Aktualisierung: 29. August 2025*
+
