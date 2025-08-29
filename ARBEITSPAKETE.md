@@ -4,7 +4,7 @@
 
 Dieses Dokument beschreibt alle Arbeitspakete (AP) für das Parkly-Projekt - eine kostenlose Parkplatz-Finder App basierend auf Crowdsourcing und OpenStreetMap.
 
-**Projektleiter**: Arvin Ka  
+**Projektleiter**: Arvin Kasipour  
 **Projektzeitraum**: Lernperiode 11  
 **Technologie**: Next.js, TypeScript, Supabase, OpenStreetMap
 
@@ -307,5 +307,6 @@ describe('ParkingMap', () => {
 
 
 *Letzte Aktualisierung: 29. August 2025*
+
 
 
