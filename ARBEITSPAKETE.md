@@ -1,6 +1,6 @@
-# 📦 Arbeitspakete - Parkly Projekt
+#  Arbeitspakete - Parkly Projekt
 
-## 📋 Übersicht
+## Übersicht
 
 Dieses Dokument beschreibt alle Arbeitspakete (AP) für das Parkly-Projekt - eine kostenlose Parkplatz-Finder App basierend auf Crowdsourcing und OpenStreetMap.
 
@@ -10,7 +10,7 @@ Dieses Dokument beschreibt alle Arbeitspakete (AP) für das Parkly-Projekt - ein
 
 ---
 
-## 🎯 AP1: Projekt-Setup & Grundstruktur
+##  AP1: Projekt-Setup & Grundstruktur
 
 ### Status: ✅ Abgeschlossen
 ### Zeitaufwand: 2 Stunden
@@ -37,7 +37,7 @@ npm install @supabase/supabase-js leaflet react-leaflet @types/leaflet lucide-re
 
 ---
 
-## 🗄️ AP2: Datenbank-Design & Schema
+## AP2: Datenbank-Design & Schema
 
 ### Status: ✅ Abgeschlossen
 ### Zeitaufwand: 1.5 Stunden
@@ -73,7 +73,7 @@ CREATE TABLE parking_spots (
 
 ---
 
-## 🗺️ AP3: Karten-Integration
+##  AP3: Karten-Integration
 
 ### Status: ✅ Abgeschlossen
 ### Zeitaufwand: 3 Stunden
@@ -106,7 +106,7 @@ const createParkingIcon = (status: 'free' | 'occupied') => {
 
 ---
 
-## ⚙️ AP4: Core-Funktionalität
+##  AP4: Core-Funktionalität
 
 ### Status: ✅ Abgeschlossen
 ### Zeitaufwand: 4 Stunden
@@ -122,7 +122,7 @@ const createParkingIcon = (status: 'free' | 'occupied') => {
 
 ---
 
-## 🏆 AP5: Gamification-System
+## AP5: Gamification-System
 
 ### Status: ✅ Abgeschlossen
 ### Zeitaufwand: 2.5 Stunden
@@ -152,7 +152,7 @@ const getLevelTitle = (level: number) => {
 
 ---
 
-## 🎨 AP6: UI/UX Design
+## AP6: UI/UX Design
 
 ### Status: ✅ Abgeschlossen
 ### Zeitaufwand: 3 Stunden
@@ -182,7 +182,7 @@ const getLevelTitle = (level: number) => {
 
 ---
 
-## 🔧 AP7: Demo-Modus & Fallbacks
+##  AP7: Demo-Modus & Fallbacks
 
 ### Status: 🔄 In Bearbeitung
 ### Zeitaufwand: 1.5 Stunden
@@ -292,19 +292,7 @@ describe('ParkingMap', () => {
 
 ---
 
-## 📊 Projekt-Metriken
 
-### Zeitaufwand (Gesamt): 20 Stunden
-### Abgeschlossen: 7/10 Arbeitspakete (70%)
-### Verbleibend: 3 Arbeitspakete
-
-### Kostenanalyse:
-- **Entwicklung**: 0 CHF (Open Source Tools)
-- **Hosting**: 0 CHF (Vercel Free Tier)
-- **Datenbank**: 0 CHF (Supabase Free Tier)
-- **Karten**: 0 CHF (OpenStreetMap)
-
-**Gesamtkosten: 0 CHF** 🎉
 
 ### Technologie-Stack:
 - **Frontend**: Next.js 15, TypeScript, Tailwind CSS
@@ -315,23 +303,9 @@ describe('ParkingMap', () => {
 
 ---
 
-## 🎯 Nächste Schritte
 
-### Priorität 1 (Kritisch):
-1. **AP8: Deployment & Hosting** - Live-Version erstellen
-2. **Supabase SQL ausführen** - Echte Datenbank-Funktionalität
-
-### Priorität 2 (Hoch):
-1. **AP9: Testing** - Qualitätssicherung
-2. **AP10: Dokumentation** - Vollständige Dokumentation
-
-### Priorität 3 (Mittel):
-1. **Performance-Optimierung**
-2. **Security-Audit**
-3. **User-Feedback einarbeiten**
-
----
 
 
 *Letzte Aktualisierung: 29. August 2025*
+
 
