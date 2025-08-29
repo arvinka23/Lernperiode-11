@@ -1,4 +1,4 @@
-# 🚗 Parkly - Projektbeschreibung
+# Parkly - Projektbeschreibung
 
 ## Projektübersicht
 
@@ -6,7 +6,7 @@
 
 ---
 
-## 🎯 Problemstellung
+##  Problemstellung
 
 ### Aktuelle Herausforderungen:
 - **Hohe Kosten**: Kommerzielle Parking-APIs kosten 200-1000 CHF/Jahr
@@ -22,7 +22,7 @@
 
 ---
 
-## 🛠️ Technische Lösung
+##  Technische Lösung
 
 ### Architektur:
 ```
@@ -45,53 +45,31 @@
 
 ---
 
-## 🚀 Kern-Features
+##  Kern-Features
 
-### 1. 🗺️ Interaktive Karten
+### 1. interaktive Karten
 - **OpenStreetMap Integration**: Kostenlose, detaillierte Kartendaten
 - **GPS-Tracking**: Automatische Standort-Erkennung
 - **Real-time Updates**: Live-Synchronisation der Parkplatz-Status
 - **Responsive Design**: Optimiert für Desktop und Mobile
 
-### 2. 🚗 Parkplatz-Management
+### 2.  Parkplatz-Management
 - **Status-Tracking**: Freie/belegte Parkplätze in Echtzeit
 - **Ein-Klick-Reporting**: Schnelle Status-Änderung per Klick
 - **Neue Parkplätze**: Community kann neue Standorte hinzufügen
 - **Automatische Erkennung**: GPS-Bewegung erkennt Parkplatz-Wechsel
 
-### 3. 🏆 Gamification-System
+### 3.  Gamification-System
 - **Punkte-System**: 10-50 Punkte pro Parkplatz-Report
 - **Level-System**: Steigende Schwierigkeit (alle 100 Punkte)
 - **Achievements**: Erfolge für Meilensteine freischalten
 - **Community-Rangliste**: Vergleich mit anderen Usern
 
-### 4. 📊 Analytics & Statistiken
+### 4.  Analytics & Statistiken
 - **User-Performance**: Persönliche Statistiken und Fortschritt
 - **Community-Daten**: Aktive User und Reports
 - **Parkplatz-Metriken**: Verfügbarkeit und Nutzungsstatistiken
 - **Real-time Dashboard**: Live-Updates aller Metriken
-
----
-
-## 💰 Kostenanalyse
-
-### Gesamtkosten: 0-10 CHF/Jahr
-
-| Service | Kosten | Alternative | Ersparnis |
-|---------|--------|-------------|-----------|
-| **Hosting** | 0 CHF | Vercel Free Tier | 100-500 CHF |
-| **Datenbank** | 0 CHF | Supabase Free Tier | 50-200 CHF |
-| **Karten** | 0 CHF | OpenStreetMap | 500 CHF |
-| **Domain** | 0-10 CHF | Vercel Subdomain | 20-50 CHF |
-| **SSL-Zertifikat** | 0 CHF | Automatisch | 50-100 CHF |
-
-**Gesamt-Ersparnis: 720-1350 CHF/Jahr** 🎉
-
-### Vergleich mit kommerziellen Lösungen:
-- **Google Maps API**: ~500 CHF/Jahr
-- **Parking-APIs**: ~200-1000 CHF/Jahr
-- **Hosting**: ~100-500 CHF/Jahr
-- **Datenbank**: ~50-200 CHF/Jahr
 
 ---
 
@@ -166,5 +144,6 @@ const handleLocationChange = (lat: number, lng: number) => {
 - [ ] Premium Features
 - [ ] API für Drittanbieter
 - [ ] Machine Learning Integration
+
 
 
