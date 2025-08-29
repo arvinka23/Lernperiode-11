@@ -1,6 +1,6 @@
 # 🚗 Parkly - Projektbeschreibung
 
-## 📋 Projektübersicht
+## Projektübersicht
 
 **Parkly** ist eine innovative, kostenlose Parkplatz-Finder App, die das Problem der Parkplatzsuche durch Crowdsourcing und moderne Technologien löst. Die App ermöglicht es Nutzern, freie Parkplätze in Echtzeit zu finden und zu melden, ohne teure APIs oder Abonnements zu benötigen.
 
@@ -167,83 +167,4 @@ const handleLocationChange = (lat: number, lng: number) => {
 - [ ] API für Drittanbieter
 - [ ] Machine Learning Integration
 
----
 
-## 📊 Erfolgs-Metriken
-
-### Technische KPIs:
-- **Ladezeit**: < 2 Sekunden
-- **Uptime**: > 99.9%
-- **API-Response**: < 500ms
-- **Mobile Performance**: Lighthouse Score > 90
-
-### Business KPIs:
-- **Aktive User**: Ziel: 1000+ pro Monat
-- **Reports pro Tag**: Ziel: 500+
-- **User Retention**: Ziel: 60% nach 30 Tagen
-- **Community Growth**: Ziel: 20% monatlich
-
----
-
-## 🔒 Sicherheit & Datenschutz
-
-### Datenschutz:
-- **GDPR-konform**: Keine persönlichen Daten speichern
-- **Anonyme Reports**: User-IDs sind pseudonymisiert
-- **Lokale Verarbeitung**: GPS-Daten bleiben lokal
-- **Transparente Nutzung**: Klare Datenschutz-Richtlinien
-
-### Sicherheit:
-- **HTTPS**: Verschlüsselte Verbindungen
-- **Row Level Security**: Datenbank-Sicherheit
-- **Input Validation**: Sichere Datenverarbeitung
-- **Rate Limiting**: Schutz vor Missbrauch
-
----
-
-## 🤝 Community & Open Source
-
-### Open Source:
-- **MIT-Lizenz**: Freie Nutzung und Modifikation
-- **GitHub Repository**: Öffentlicher Code
-- **Contributing Guidelines**: Klare Beitrags-Richtlinien
-- **Issue Tracking**: Transparente Entwicklung
-
-### Community:
-- **User Feedback**: Regelmäßige Umfragen
-- **Feature Requests**: Community-basierte Entwicklung
-- **Bug Reports**: Schnelle Behebung
-- **Documentation**: Umfassende Guides
-
----
-
-## 📞 Kontakt & Support
-
-### Entwickler:
-- **Name**: Arvin Ka
-- **GitHub**: [arvinka23](https://github.com/arvinka23)
-- **Projekt**: Parkly - Kostenlose Parkplatz-Finder App
-
-### Support:
-- **GitHub Issues**: Bug Reports und Feature Requests
-- **Documentation**: Umfassende README und Guides
-- **Community**: User-Feedback und Diskussionen
-
----
-
-## 🎯 Fazit
-
-**Parkly** demonstriert, wie moderne Web-Technologien und Crowdsourcing komplexe Probleme kostengünstig lösen können. Durch die Kombination aus:
-
-- **Kostenlosen Technologien** (OpenStreetMap, Supabase Free Tier)
-- **Crowdsourcing-Ansatz** (User-generierte Daten)
-- **Gamification** (Motivation zur Teilnahme)
-- **Real-time Updates** (Aktuelle Informationen)
-
-entsteht eine nachhaltige, skalierbare Lösung für die Parkplatzsuche, die sowohl technisch als auch wirtschaftlich überzeugt.
-
-**Gesamtkosten: 0-10 CHF/Jahr** bei einer **Ersparnis von 720-1350 CHF/Jahr** gegenüber kommerziellen Lösungen.
-
----
-
-*Parkly - Finde kostenlose Parkplätze mit der Community! 🚗✨*
