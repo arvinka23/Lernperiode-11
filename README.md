@@ -4,6 +4,12 @@
 
 Parkly ist eine innovative, kostenlose Parkplatz-Finder App, die auf Crowdsourcing und OpenStreetMap basiert. Die App ermöglicht es Nutzern, freie Parkplätze in Echtzeit zu finden und zu melden, ohne teure APIs oder Abonnements zu benötigen.
 
+## Screenshots
+
+![Parkly App Screenshot 1](picture%201.jpg)
+
+![Parkly App Screenshot 2](Picture%202.jpg)
+
 ## Hauptziele
 
 - **Kostenlose Lösung**: Betriebskosten von 0-10 CHF/Jahr

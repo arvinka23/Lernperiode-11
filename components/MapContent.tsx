@@ -32,6 +32,7 @@ interface MapContentProps {
   setShowAddSpot: (show: boolean) => void
   onAddSpot?: (lat: number, lng: number) => void
   onStatusChange?: (id: string, status: 'free' | 'occupied') => void
+  onSpotClick?: (id: string) => void
 }
 
 function MapClickHandler({ onMapClick }: { onMapClick: (lat: number, lng: number) => void }) {
@@ -56,6 +57,7 @@ function MapContent({
   setShowAddSpot,
   onAddSpot,
   onStatusChange,
+  onSpotClick,
 }: MapContentProps) {
   const [newSpotLocation, setNewSpotLocation] = useState<[number, number] | null>(null)
   const [mounted, setMounted] = useState(false)
@@ -187,13 +189,20 @@ function MapContent({
             key={spot.id}
             position={[spot.lat, spot.lng]}
             icon={getMarkerIcon(spot.status)}
+            eventHandlers={{
+              click: () => {
+                if (onSpotClick) {
+                  onSpotClick(spot.id)
+                }
+              },
+            }}
           >
             <Popup>
               <div className="p-2">
                 <p className="font-semibold mb-2">
                   Status: {spot.status === 'free' ? '🟢 Frei' : '🔴 Belegt'}
                 </p>
-                <div className="flex gap-2">
+                <div className="flex gap-2 mb-2">
                   <button
                     onClick={() => handleStatusChange(spot.id, 'free')}
                     className={`px-3 py-1 rounded text-sm ${
@@ -215,6 +224,14 @@ function MapContent({
                     Belegt
                   </button>
                 </div>
+                {onSpotClick && (
+                  <button
+                    onClick={() => onSpotClick(spot.id)}
+                    className="w-full px-3 py-1 rounded text-sm bg-blue-100 text-blue-700 hover:bg-blue-200"
+                  >
+                    Details anzeigen
+                  </button>
+                )}
                 {spot.reportedAt && (
                   <p className="text-xs text-gray-500 mt-2">
                     Gemeldet: {new Date(spot.reportedAt).toLocaleString('de-CH')}

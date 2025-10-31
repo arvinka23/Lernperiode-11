@@ -1,15 +1,26 @@
 import { createClient } from '@supabase/supabase-js'
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+// Environment variables are available in both server and client in Next.js
+// But we should only create the client on the client side
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || ''
+const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || ''
 
-if (!supabaseUrl || !supabaseAnonKey) {
+// Create supabase client only if we have credentials
+// Will be null in demo mode
+let supabaseInstance: ReturnType<typeof createClient> | null = null
+
+if (supabaseUrl && supabaseAnonKey) {
+  try {
+    supabaseInstance = createClient(supabaseUrl, supabaseAnonKey)
+  } catch (error) {
+    console.error('Failed to create Supabase client:', error)
+    supabaseInstance = null
+  }
+} else if (typeof window !== 'undefined') {
   console.warn('Supabase credentials not found. App will run in demo mode.')
 }
 
-export const supabase = supabaseUrl && supabaseAnonKey
-  ? createClient(supabaseUrl, supabaseAnonKey)
-  : null
+export const supabase = supabaseInstance
 
 export interface ParkingSpot {
   id: string
@@ -58,12 +69,18 @@ export async function getParkingSpots(lat?: number, lng?: number, radius?: numbe
       // Use PostGIS for location-based queries if available
       // For now, fetch all and filter client-side
       const { data, error } = await query
-      if (error) throw error
+      if (error) {
+        console.error('Supabase query error:', error)
+        return []
+      }
       return data as ParkingSpot[]
     }
 
     const { data, error } = await query.limit(100)
-    if (error) throw error
+    if (error) {
+      console.error('Supabase query error:', error)
+      return []
+    }
     return data as ParkingSpot[]
   } catch (error) {
     console.error('Error fetching parking spots:', error)
